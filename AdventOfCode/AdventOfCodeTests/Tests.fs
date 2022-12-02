@@ -15,7 +15,7 @@ let ``Day 1 test data`` () =
     let stream =
         assembly.GetManifestResourceStream("AdventOfCodeTests.Day1TestInput.txt")
         
-    let expected = 24000
+    let expected = 45000
     let result = calcMostCalories (streamToText stream)
     
     printfn "%A" (streamToText stream)

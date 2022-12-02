@@ -33,7 +33,9 @@ let calcMostCalories (text: string) =
             |> List.rev)
     |> List.map (List.map int)
     |> List.map List.sum
-    |> List.max
+    |> List.sortDescending
+    |> List.take 3
+    |> List.sum
 
 stream
 |> streamToText
