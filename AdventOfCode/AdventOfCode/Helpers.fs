@@ -7,7 +7,7 @@ let loadFile (filePath: string) =
     let assembly =
         Assembly.GetExecutingAssembly()
     
-    assembly.GetManifestResourceStream($"{filePath}")
+    assembly.GetManifestResourceStream($"AdventOfCode.Input.{filePath}")
     
 let streamToText (input: Stream) =
     input

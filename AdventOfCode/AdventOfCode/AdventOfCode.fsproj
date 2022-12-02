@@ -8,10 +8,13 @@
     <ItemGroup>
         <Compile Include="Helpers.fs" />
         <Compile Include="Day1.fs" />
+        <Compile Include="Day2.fs" />
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="Day1Input.txt" />
+        <EmbeddedResource Include="Input\Day1Input.txt" />
+        <EmbeddedResource Include="Input\Day2TestInput.txt" />
+        <EmbeddedResource Include="Input\Day2Input.txt" />
     </ItemGroup>
 
 </Project>

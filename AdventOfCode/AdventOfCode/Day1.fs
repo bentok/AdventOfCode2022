@@ -8,7 +8,7 @@ let assembly =
     Assembly.GetExecutingAssembly()
 
 let stream =
-    assembly.GetManifestResourceStream("AdventOfCode.Day1Input.txt")
+    assembly.GetManifestResourceStream("AdventOfCode.Input.Day1Input.txt")
     
 let streamToText (input: Stream) =
     input
