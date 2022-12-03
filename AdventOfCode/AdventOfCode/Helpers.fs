@@ -1,5 +1,6 @@
 module Helpers
 
+open System
 open System.IO
 open System.Reflection
 
@@ -16,3 +17,6 @@ let streamToText (input: Stream) =
     
 let loadInputData =
     streamToText << loadFile
+
+let makeLines (input: string) =
+    input.Split(new string (Environment.NewLine))

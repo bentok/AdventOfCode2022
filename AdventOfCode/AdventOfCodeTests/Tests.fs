@@ -45,3 +45,14 @@ let ``Day 2 part 2`` () =
     let expected = 12
         
     result |> should equal expected
+
+[<Fact>]
+let ``Day 3 part 1`` () =
+
+    let data =
+        loadInputData "Day3TestInput.txt"
+        
+    let result = Day3.part1 data
+    let expected = 157
+        
+    result |> should equal expected
