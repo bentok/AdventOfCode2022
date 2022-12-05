@@ -20,3 +20,6 @@ let loadInputData =
 
 let makeLines (input: string) =
     input.Split(new string (Environment.NewLine))
+    
+let splitOn (splitter: string) (input: string) =
+    input.Split([| splitter |], StringSplitOptions.None)
